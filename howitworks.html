@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Modak&display=swap" rel="stylesheet">
+<style>
+
+body {
+font-family: 'Covered By Your Grace', cursive;
+
+}
+
+.navbar {
+    position: relative;
+  overflow: hidden;
+  background-color: white;
+
+}
+
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.triplet a {
+    font-size: 24px;
+    float: none;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar a:hover {
+  background-color: #d9f1ff;
+}
+
+.info {
+    text-align: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:  #ace0ff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:#26abff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+    <div class="navbar" >
+
+        <div class="triplet">
+            <a style="color:#26abff;" href="#news">Resell, Inc</a>
+        </div>
+        
+      <a style="color:#26abff;" href="#home">    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span></a>
+
+    
+  
+    </div>
+    <div class="info">
+    <h3>Resell, Inc</h3>
+    <p>For Sellers, we would like you to be the "suppliers" of our website.
+    This means, you will can post on our site allowing customers to buy 
+    from you. We don't charge our sellers any commision, sell hasslefree.</p>
+    
+    </div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="howitworks.html">How it works</a>
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
